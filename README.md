@@ -1,6 +1,6 @@
 # Dynamic Web Pages with JavaScript
 
-##[My Page](https://jasonliu5322.github.io/javascript/)
+## [My Page](https://jasonliu5322.github.io/javascript/)
 
 ## Learning Objectives
 - Students will incorporate JavaScript into a web page to create dynamic content that responds to input
