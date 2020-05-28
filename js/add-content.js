@@ -12,3 +12,29 @@ if (hourNow > 18) {
     greeting = 'Welcome!';
 }
 document.write( '<h3>' + greeting + '</h3>');
+
+var name = window.prompt("What is your name?");
+var place = window.prompt("Where are you living?")
+
+function append(var1, var2){
+    var var3 = var1 + var2;
+    var n =var3.length;
+    if(n > 30 || var1 == null || var2 == null){
+        document.write("Your input is invalid, refresh this page.");
+    }else{ document.write(var3 + " is a name of place?")}  
+}
+append(name, place);
+
+function updateMessage(){
+    var mes = "Hi " + name + ", thanks for visiting my page!^-^"
+    var mes1 = place + " is an amazing place!"
+    var newMessage = document.getElementById('message');
+    newMessage.textContent = mes;
+    var newMessage = document.getElementById('message1');
+    newMessage.textContent = mes1;
+}
+updateMessage();
+updateMessage();
+
+
+
