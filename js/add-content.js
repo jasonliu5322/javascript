@@ -19,7 +19,7 @@ var place = window.prompt("Where are you living?")
 function append(var1, var2){
     var var3 = var1 + var2; 
     var newMessage = document.getElementById('message3');
-    if(var1.length < 1 || var2.length < 1  ){ 
+    if(var1 == 'null' || var2 == null || var1 == '' || var2 == '' ){ 
        newMessage.textContent = ("Your input is invalid, refresh this page.");
     }else{ newMessage.textContent = var3 + " is a name of place?";}  
 }
