@@ -17,11 +17,11 @@ var name = window.prompt("What is your name?");
 var place = window.prompt("Where are you living?")
 
 function append(var1, var2){
-    var var3 = var1 + var2;
-    var n =var3.length;
-    if(n > 30 || var1 == null || var2 == null){
-        document.write("Your input is invalid, refresh this page.");
-    }else{ document.write(var3 + " is a name of place?")}  
+    var var3 = var1 + var2; 
+    var newMessage = document.getElementById('message3');
+    if(var1.length < 1 || var2.length < 1  ){ 
+       newMessage.textContent = ("Your input is invalid, refresh this page.");
+    }else{ newMessage.textContent = var3 + " is a name of place?";}  
 }
 append(name, place);
 
