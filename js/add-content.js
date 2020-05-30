@@ -51,23 +51,13 @@ append(user_name, place);*/
 
 var user_name, place;
 function append(){
-    var flag1 = true;
-    var flag2 = true;
     user_name = window.prompt("What is your name?");//prompt user input name
-    while(flag1){
-        if (user_name == null ||  user_name == ''){ 
-            user_name = window.prompt("Your input is invalid, please input your name again?");// Prompt user input again
-        } else {             
-            flag1 = false;
-        }
+    while(user_name == null ||  user_name == ''){
+        user_name = window.prompt("Your input is invalid, please input your name again?");// Prompt user input again      
     }
     place = window.prompt("Where are you living?");//prompt user input place
-    while(flag2){
-        if(place == null || place == ''){
-            place = window.prompt("Your input is invalid, please input your place again?");
-        }else { 
-            flag2 = false;
-        }
+    while(place == null || place == ''){
+        place = window.prompt("Your input is invalid, please input your place again?");    
     }
  }
 append();
